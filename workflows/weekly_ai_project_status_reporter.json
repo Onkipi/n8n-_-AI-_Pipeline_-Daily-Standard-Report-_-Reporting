@@ -1,0 +1,25 @@
+{
+  "name": "Weekly AI Project Status Reporter",
+  "nodes": [
+    {
+      "name": "Cron",
+      "type": "n8n-nodes-base.cron"
+    },
+    {
+      "name": "Jira Fetch Projects",
+      "type": "n8n-nodes-base.httpRequest"
+    },
+    {
+      "name": "Format Data",
+      "type": "n8n-nodes-base.code"
+    },
+    {
+      "name": "OpenAI Summary",
+      "type": "n8n-nodes-base.openai"
+    },
+    {
+      "name": "Send Email",
+      "type": "n8n-nodes-base.gmail"
+    }
+  ]
+}

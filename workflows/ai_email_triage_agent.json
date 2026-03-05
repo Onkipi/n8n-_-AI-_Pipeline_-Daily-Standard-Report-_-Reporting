@@ -1,0 +1,21 @@
+{
+  "name": "AI Email Triage Agent",
+  "nodes": [
+    {
+      "name": "Gmail Trigger",
+      "type": "n8n-nodes-base.gmailTrigger"
+    },
+    {
+      "name": "OpenAI Classify",
+      "type": "n8n-nodes-base.openai"
+    },
+    {
+      "name": "Router",
+      "type": "n8n-nodes-base.if"
+    },
+    {
+      "name": "Slack Alert",
+      "type": "n8n-nodes-base.slack"
+    }
+  ]
+}
